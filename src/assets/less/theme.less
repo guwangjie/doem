@@ -1,0 +1,111 @@
+.theme(@pri:'',@pri_active:'') {
+  //换肤的控件都写在这
+  //登陆背景遮罩层
+  .login_bg {
+    &::after {
+      background: linear-gradient(0, #ffffff26, @pri);
+    }
+  }
+  //顶部标题栏
+  .title_bar {
+    background: @pri;
+    .tool_btn {
+      .icon {
+        &:hover {
+          background: @pri_active;
+        }
+      }
+    }
+  }
+  //页面选项卡
+  .tags-view-item.active {
+    background-color: @pri_active;
+    border-color: @pri_active;
+  }
+  //左侧菜单字体颜色
+  .el-menu-item.is-active {
+    color: @pri_active;
+    //左侧菜单svg图标
+    .svg-icon {
+      color: @pri_active;
+    }
+  }
+  //table标题头颜色
+  .table {
+    th {
+      background-color: @pri;
+    }
+  }
+  //聊天栏左侧TAB
+  .visitor_tab {
+    .active_item {
+      color: @pri_active;
+      &::after {
+        background-color: @pri_active;
+      }
+    }
+  }
+  .used_tab {
+    .active {
+      background-color: @pri_active;
+    }
+  }
+  //以下是elementui控件颜色
+  //分页颜色
+  .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: @pri_active;
+  }
+  .el-select .el-input.is-focus .el-input__inner {
+    border-color: @pri_active;
+  }
+  .el-pagination .el-select .el-input .el-input__inner {
+    &:hover {
+      border-color: @pri_active;
+    }
+    &:focus {
+      border-color: @pri_active;
+    }
+  }
+  //按钮
+  .el-button--primary {
+    background-color: @pri;
+    border-color: @pri;
+    &:hover {
+      background-color: @pri_active;
+      border-color: @pri_active;
+    }
+  }
+  //输入框
+  .el-input.is-active .el-input__inner,
+  .el-input__inner:focus {
+    border-color: @pri_active;
+  }
+  //日历
+  .el-backtop,
+  .el-calendar-table td.is-today {
+    color: @pri_active;
+  }
+  //checkbox
+  .el-checkbox__input.is-checked + .el-checkbox__label {
+    color: @pri_active;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: @pri_active;
+    border-color: @pri_active;
+  }
+  //下拉选项框
+  .el-select-dropdown__item.selected {
+    span {
+      color: @pri_active;
+    }
+  }
+  //单选按钮
+  .el-radio__input.is-checked + .el-radio__label {
+    color: @pri_active;
+  }
+  .el-radio__input.is-checked .el-radio__inner {
+    background-color: @pri_active;
+    border-color: @pri_active;
+  }
+}

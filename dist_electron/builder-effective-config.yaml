@@ -1,0 +1,25 @@
+directories:
+  output: dist_electron
+  buildResources: build
+  app: dist_electron/bundled
+files:
+  - filter:
+      - '**'
+extends: null
+appId: com.org.workbench
+publish:
+  - provider: generic
+    url: 'http://192.168.0.105/download/'
+win:
+  icon: ./public/app.ico
+  target:
+    - nsis
+    - zip
+mac:
+  icon: ./public/app.png
+productName: 联易全保工作台
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: false
+electronVersion: 6.1.9
