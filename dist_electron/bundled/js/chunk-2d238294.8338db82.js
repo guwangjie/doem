@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d238294"],{fdcc:function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("keep-alive",{attrs:{include:"service_desktop_index"}},[t("router-view")],1)},r=[],s={name:"service_desktop"},i=s,u=t("e90a"),a=Object(u["a"])(i,c,r,!1,null,null,null);n["default"]=a.exports}}]);
+//# sourceMappingURL=chunk-2d238294.8338db82.js.map

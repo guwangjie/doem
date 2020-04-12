@@ -1,0 +1,40 @@
+@import url('./theme.less');
+.theme1 {
+  .theme(@pri1, @pri_active1) !important; //默认的样式
+}
+.theme2 {
+  .theme(@pri2, @pri_active2) !important;
+}
+.theme3 {
+  .theme(@pri3, @pri_active3) !important;
+}
+.theme4 {
+  .theme(@pri4, @pri_active4) !important;
+}
+
+//以下是主题变量
+@pri1: #00acac;
+@pri_active1: #4dc5c3;
+
+@pri2: #bc2f2e;
+@pri_active2: #ff4d4d;
+
+@pri3: #2ba245;
+@pri_active3: #3fb837;
+
+@pri4: #108ee9;
+@pri_active4: #64beff;
+//sidebar
+@menuBg: #304156;
+@subMenuBg: #1f2d3d;
+@menuHover: #001528;
+
+// 以下是通用变量
+@h1c: #333333;
+@h2c: #555555;
+@h3c: #777777;
+@h4c: #aaaaaa;
+@h5c: #cccccc;
+@h6c: #eeeeee;
+@red: red;
+@border: 1px solid @h6c;
